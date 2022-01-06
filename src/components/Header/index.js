@@ -1,4 +1,5 @@
 import React from "react";
+import './styles.css'
 import Logo from "../../objects/logo";
 import Menu from "../../objects/Menu";
 import Sobre from "../../objects/Sobre";
