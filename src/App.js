@@ -1,13 +1,16 @@
-import React from 'react';
-import Sobre from './objects/Sobre';
+import React,{Fragment}from 'react';
 import Logo from './objects/logo';
+import Sobre from './objects/Sobre';
+import Menu from './objects/Menu';
 function App() {
   return(
-    <div>
+    //ou pode usar <>  para nao precisar escrever fragment nem importalo.
+    <Fragment>
       <Logo />
       <Sobre/>
-    </div>
-
+      <Menu />
+    </Fragment>
+    //precisa </> fecha-lo
 
   );
 }
