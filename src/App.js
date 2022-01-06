@@ -1,14 +1,10 @@
 import React,{Fragment}from 'react';
-import Logo from './objects/logo';
-import Sobre from './objects/Sobre';
-import Menu from './objects/Menu';
+import Header from './components/Header';
 function App() {
   return(
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
     <Fragment>
-      <Logo />
-      <Sobre/>
-      <Menu />
+      <Header/>
     </Fragment>
     //precisa </> fecha-lo
 
