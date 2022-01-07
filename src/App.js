@@ -1,8 +1,8 @@
 import React,{Fragment}from 'react';
 import './App.css';
-import Input from './objects/input';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
+import Checkbox from './objects/Checkbox';
 function App() {
   return(
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
@@ -10,7 +10,7 @@ function App() {
       <main className='app'>
       <Header/>
       <Hashtag/>
-      <Input id="show"value="show" content="mostar eventos"/>
+      <Checkbox id="show"value="show" type="checkbox"content="mostar eventos"/>
       
       </main>
     
