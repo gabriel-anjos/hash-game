@@ -10,7 +10,7 @@ function App() {
       <main className='app'>
       <Header/>
       <Hashtag/>
-      <Checkbox id="show"value="show" type="checkbox"content="mostar eventos"/>
+      <Checkbox id="show"value="show" type="checkbox"content="Mostrar eventos"/>
       
       </main>
     
