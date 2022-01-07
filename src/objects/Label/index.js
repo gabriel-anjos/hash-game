@@ -1,6 +1,7 @@
 import React from "react";
-const Label=({content})=>{
-    return(<label htmlFor="">{content}</label>)
+import './styles.css'
+const Label=({htmlFor,content})=>{
+    return(<label className="label"htmlFor={htmlFor}>{content}</label>)
 };
 
 export default Label;
