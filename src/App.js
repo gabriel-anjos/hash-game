@@ -1,13 +1,17 @@
 import React,{Fragment}from 'react';
+import './App.css';
 import Hashtag from './components/Hashtag';
 import Header from './components/Header';
 function App() {
   return(
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
-    <Fragment>
+    
+      <main className='app'>
       <Header/>
       <Hashtag/>
-    </Fragment>
+
+      </main>
+    
     //precisa </> fecha-lo
 
   );
