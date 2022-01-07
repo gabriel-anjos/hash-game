@@ -7,8 +7,19 @@ function App() {
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
     <Fragment>
       <Header/>
-      <Card/>
-      <Player/>
+      <Card>
+      <Player player="x"/>
+      <Player player="o"/>
+      <Player player="x"/>
+      
+      <Player player="o"/>
+      <Player player="x"/>
+      <Player player="x"/>
+
+      <Player player="x"/>
+      <Player player="o"/>
+      <Player player="o"/>
+      </Card>
     </Fragment>
     //precisa </> fecha-lo
 
