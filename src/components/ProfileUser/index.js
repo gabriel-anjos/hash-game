@@ -18,11 +18,13 @@ const ProfileUser =()=>{
             <dt className="title">Gabriel anjos</dt>
             <dd className="description">Em processo de aprendizado e aperfeiçoamentos em tecnologias de desenvolvimento de softwares</dd>
             <dd className="socials">
-                <IconSocial src={GitHub} alt="logo da Github"/>
-                <IconSocial src={Linkedin} alt="logo do linkedin"/>
-                <IconSocial src={Facebook} alt="logo do facebook"/>
-                <IconSocial src={Twitter} alt="logo do twitter"/>
-                <IconSocial src={Instagram} alt="logo do instagram"/>
+                <IconSocial action='http://github.com/gabriel-anjos' src={GitHub} alt="logo da Github"/>
+                <IconSocial action='http://linkedin.com/in/gabriel-anjos-60050b1b2' src={Linkedin} alt="logo do linkedin"/>
+                <IconSocial action='http://facebook.com/profile.php?id=100003264090617' src={Facebook} alt="logo do facebook"/>
+                <IconSocial action='http://twitter.com/gabriel_anjos_dev' src={Twitter} alt="logo do twitter"/>
+                <IconSocial action='http://instagram.com/gabriel_anjos_dev' src={Instagram} alt="logo do instagram"/>
+                
+
             </dd>
         </dl>
     );
