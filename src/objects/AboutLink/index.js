@@ -1,13 +1,9 @@
 import React from "react";
 import './styles.css'
 
-const handClick =()=>{
-   console.log("clicou");
-}
-
-const AboutLink =({className=''})=>{
+const AboutLink =({className='',onClick})=>{
    return(<a href='#to-do' className={`about-link ${className}`} 
-   onClick={handClick}>Sobre</a>);
+   onClick={onClick}>Sobre</a>);
 
 };
 

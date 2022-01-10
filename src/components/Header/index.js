@@ -3,12 +3,12 @@ import './styles.css'
 import LogoCollab from "../../objects/LogoCollab";
 import Menu from "../../objects/Menu";
 import AboutLink from "../../objects/AboutLink";
-const Header =()=>{
+const Header =({onClick})=>{
     return(
         <header className="header">
-            <LogoCollab/>
-            <AboutLink/>
-            <Menu/>
+            <LogoCollab />
+            <AboutLink onClick={onClick}/>
+            <Menu onClick={onClick}/>
         </header>
     );
 }
