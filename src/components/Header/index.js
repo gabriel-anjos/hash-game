@@ -2,12 +2,12 @@ import React from "react";
 import './styles.css'
 import Logo from "../../objects/logo";
 import Menu from "../../objects/Menu";
-import Sobre from "../../objects/Sobre";
+import AboutLink from "../../objects/AboutLink";
 const Header =()=>{
     return(
         <header className="header">
             <Logo/>
-            <Sobre/>
+            <AboutLink/>
             <Menu/>
         </header>
     );

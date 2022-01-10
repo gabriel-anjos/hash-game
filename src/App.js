@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hashtag from './components/Hashtag';
 import Checkbox from './objects/Checkbox';
 import About from './objects/About';
+import AboutLink from './objects/AboutLink';
 function App() {
   return(
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
@@ -12,7 +13,9 @@ function App() {
       <Header/>
       <Hashtag/>
       <Checkbox id="show"value="show" type="checkbox"content="Mostrar eventos"/>
-      <About/>
+      <About>
+        <AboutLink/>
+      </About>
       </main>
     
     //precisa </> fecha-lo
