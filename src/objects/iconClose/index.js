@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css'
-const IconClose=()=>{
-    return(<a href="#to-do" className="icon-close">
+const IconClose=({onClick})=>{
+    return(<a href="#to-do" className="icon-close" onClick={onClick}>
         <span className="content">Fechar</span>
         </a>);
 }
