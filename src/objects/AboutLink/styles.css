@@ -5,3 +5,7 @@
     text-transform: uppercase;
     font-weight: bold;
   }
+
+  .about-link.-light{
+    color: var(--color-zero);
+  }
