@@ -2,7 +2,7 @@ import React from "react";
 import './styles.css'
 import Label from "../Label";
 import Input from "../input";
-const Checkbox=({id='',value='',content=''})=>{
+const InputCheckbox=({id='',value='',content=''})=>{
     return(
         <>
         <Input id={id}value={value} type="checkbox"content={content}/>
@@ -10,4 +10,4 @@ const Checkbox=({id='',value='',content=''})=>{
       </>
     );
 }
-export default Checkbox;
+export default InputCheckbox;
