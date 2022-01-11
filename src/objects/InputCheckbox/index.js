@@ -4,11 +4,11 @@ import LabelGame from "../LabelGame";
 import InputGame from "../inputGame";
 
 
-const InputCheckbox=({id='',value='',content='',onClick})=>{
+const InputCheckbox=({id='',value='',content=''})=>{
     return(
         <>
         <InputGame id={id}value={value} type="checkbox"content={content}/>
-        <LabelGame onClick={onClick} htmlFor={id} content={content} />
+        <LabelGame  htmlFor={id} content={content} />
       </>
     );
 }

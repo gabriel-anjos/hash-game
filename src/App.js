@@ -10,7 +10,6 @@ import HistoryGame from "./components/HistoryGame";
 
 function App() {
   const [activeAbout, setActiveAbout] = useState("");
-  const [activeHistoryGame, setHistoryGame] = useState("");
   const handleClickAdd = () => {
     setActiveAbout("-active");
   };
@@ -18,9 +17,7 @@ function App() {
     setActiveAbout("");
   };
 
-  const handleClick = () => {
-    setHistoryGame((old) => old=== "-active" ? "" :  "-active" );
-  };
+
 
   return (
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
@@ -29,13 +26,12 @@ function App() {
       <HeaderGame onClick={handleClickAdd} />
       <HashtagGame />
       <InputCheckbox
-        onClick={handleClick}
         id="show"
         value="show"
         type="checkbox"
         content="Mostrar eventos"
       />
-      <HistoryGame className={activeHistoryGame} />
+      <HistoryGame />
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
         <ProfileUser />
