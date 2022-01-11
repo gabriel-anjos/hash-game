@@ -1,12 +1,12 @@
 import React from "react";
 import './styles.css'
-import Label from "../Label";
+import LabelGame from "../LabelGame";
 import InputGame from "../inputGame";
 const InputCheckbox=({id='',value='',content=''})=>{
     return(
         <>
         <InputGame id={id}value={value} type="checkbox"content={content}/>
-        <Label  htmlFor={id} content={content} />
+        <LabelGame  htmlFor={id} content={content} />
       </>
     );
 }
