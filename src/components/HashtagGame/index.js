@@ -3,10 +3,10 @@ import './styles.css';
 import CardGame from "../../objects/CardGame";
 import PlayerGame from "../../objects/PlayerGame";
 
-const Hashtag = () => {
+const HashtagGame = () => {
   return (
     <CardGame>
-      <ul className="hashtag">
+      <ul className="hashtag-game">
         <li className="item"><PlayerGame player="x"/></li>
         <li className="item"><PlayerGame player="x"/></li>
         <li className="item"><PlayerGame player="o"/></li>
@@ -21,4 +21,4 @@ const Hashtag = () => {
     </CardGame>
   );
 };
-export default Hashtag;
+export default HashtagGame;
