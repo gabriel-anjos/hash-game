@@ -2,7 +2,12 @@ import React from "react";
 import './styles.css';
 import PlayerX from '../../img/X.png';
 import PlayerO from '../../img/Circle.png'
-const PlayerGame=({player})=>{
+
+const handleClick=()=>{
+    console.log("vamo que vamo!!!")
+}
+
+const PlayerGame=({player=false})=>{
    const players=[];
    players['x']=PlayerX
    players['o']=PlayerO
@@ -13,6 +18,14 @@ const PlayerGame=({player})=>{
     // }else if(props.player==='o'){
     //     player=PlayerO;
     // }
-    return(<button className="player-game"><img src={players[player]} alt={`jogador ${player}`}></img></button>)
+    return(
+    <button onClick={handleClick}className="player-game">
+        {player && <img src={players[player]} alt={`jogador ${player}`}></img> }
+        
+    </button>
+        
+    );
+        
+    
 }
 export default PlayerGame;

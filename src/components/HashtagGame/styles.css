@@ -90,3 +90,8 @@ border-bottom-right-radius: 2.5px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
+
+.hashtag-game .player-game{
+  flex-basis: 100%;
+
+}
