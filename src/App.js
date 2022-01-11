@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './App.css';
-import Header from './components/Header';
+import HeaderGame from './components/HeaderGame';
 import HashtagGame from './components/HashtagGame';
 import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
@@ -22,7 +22,7 @@ function App() {
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
     
       <main className='app'>
-      <Header onClick={handleClickAdd}/>
+      <HeaderGame onClick={handleClickAdd}/>
       <HashtagGame/>
       <InputCheckbox id="show"value="show" type="checkbox"content="Mostrar eventos"/>
       <LayerDark className={activeAbout}>
