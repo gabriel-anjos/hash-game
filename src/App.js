@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
 import Checkbox from './objects/Checkbox';
-import About from './objects/About';
+import LayerDark from './objects/LayerDark';
 import HeaderInternal from './components/HeaderInternal';
 import ProfileUser from './components/ProfileUser';
 
@@ -25,10 +25,10 @@ function App() {
       <Header onClick={handleClickAdd}/>
       <Hashtag/>
       <Checkbox id="show"value="show" type="checkbox"content="Mostrar eventos"/>
-      <About className={activeAbout}>
+      <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser/>
-      </About>
+      </LayerDark>
       </main>
     
     //precisa </> fecha-lo
