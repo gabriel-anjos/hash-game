@@ -9,6 +9,7 @@
 .app > .header-game{
     width: 90vw;
     margin: 0 auto 85px ;
+    min-width: 260px;
 }
 
 .app > .card-game {
@@ -19,10 +20,14 @@
     margin-bottom: 40px;
     max-width: 330px;
     max-height: 330px;
+    min-width: 260px;
+    min-height: 260px;
 }
 
 .app > .label-game{
     margin-bottom: var(--spacing-big);
+    display: flex;
+    justify-content: center;
 }
 
 .app > .history-game{
