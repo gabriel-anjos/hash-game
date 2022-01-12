@@ -24,7 +24,7 @@ const HashtagGame = () => {
   return (
     <CardGame>
       <ul className="hashtag-game">
-            {players.map(player => <li key={player.id} className="item"  onClick={() => handleClick(player.id)}><PlayerGame id={player.id} content={player.content}/></li>)}
+            {players.map(({id,content}) => (<li key={id} className="item"  onClick={() => content==='' && handleClick(id)}><PlayerGame id={id} content={content}/></li>))}
       </ul>
     </CardGame>
   );
