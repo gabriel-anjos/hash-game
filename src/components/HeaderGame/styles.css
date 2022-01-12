@@ -34,4 +34,17 @@
     .header-game > .menu-game{
         width: 30px;
     }
+    .app > .wrapper-hashtaghistory{
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+    }
+    .app .card-game{
+        margin-right: 40px;
+    }
+    .app .label-game{
+        position: absolute;
+        top: 370px;
+        left: 96px;
+    }
 }

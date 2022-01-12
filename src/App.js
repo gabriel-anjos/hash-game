@@ -7,6 +7,7 @@ import LayerDark from "./objects/LayerDark";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
 import HistoryGame from "./components/HistoryGame";
+import WrapperHashtagHistory from "./objects/WrapperHashtagHistory";
 
 function App() {
   const [activeAbout, setActiveAbout] = useState("");
@@ -18,24 +19,26 @@ function App() {
     setActiveAbout("");
   };
 
-  const addHistory=(player)=>{
-    setHistory(old=>[...old,`Adicionou ${player.toUpperCase()}`])
+  const addHistory = (player) => {
+    setHistory((old) => [...old, `Adicionou ${player.toUpperCase()}`]);
   };
-
 
   return (
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
 
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame callback={addHistory} />
-      <InputCheckbox
-        id="show"
-        value="show"
-        type="checkbox"
-        content="Mostrar eventos"
-      />
-      <HistoryGame history={history}/>
+      <WrapperHashtagHistory>
+        <HashtagGame callback={addHistory} />
+        <InputCheckbox
+          id="show"
+          value="show"
+          type="checkbox"
+          content="Mostrar eventos"
+        />
+      <HistoryGame history={history} />
+      </WrapperHashtagHistory>
+
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
         <ProfileUser />
