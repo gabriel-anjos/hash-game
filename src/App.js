@@ -29,6 +29,9 @@ function App() {
       setActive(old=> !!!old )
 
   }
+  const changeHistory=(key)=>{
+      setHistory(old=>old.slice(0,key))
+  }
 
   return (
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
@@ -44,7 +47,7 @@ function App() {
           content="Mostrar eventos"
           onClick={ShowHideHistory}
         />
-      <HistoryGame history={history} />
+      <HistoryGame history={history} onClick={changeHistory} />
       </WrapperHashtagHistory>
 
       <LayerDark className={activeAbout}>
