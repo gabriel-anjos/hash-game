@@ -25,7 +25,9 @@ function App() {
   };
 
   const ShowHideHistory=()=>{
-      setActive(old=> old ? false : true)
+      // setActive(old=> old ? false : true)
+      setActive(old=> !!!old )
+
   }
 
   return (
