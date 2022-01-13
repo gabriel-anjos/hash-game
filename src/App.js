@@ -12,6 +12,7 @@ import WrapperHashtagHistory from "./objects/WrapperHashtagHistory";
 function App() {
   const [activeAbout, setActiveAbout] = useState("");
   const [history, setHistory] = useState([]);
+  const [active,setActive]=useState(false);
   const handleClickAdd = () => {
     setActiveAbout("-active");
   };
@@ -23,18 +24,23 @@ function App() {
     setHistory((old) => [...old, `Adicionou ${player.toUpperCase()}`]);
   };
 
+  const ShowHideHistory=()=>{
+      setActive(old=> old ? false : true)
+  }
+
   return (
     //ou pode usar <>  para nao precisar escrever fragment nem importalo.
 
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <WrapperHashtagHistory>
+      <WrapperHashtagHistory active={active}>
         <HashtagGame callback={addHistory} />
         <InputCheckbox
           id="show"
           value="show"
           type="checkbox"
           content="Mostrar eventos"
+          onClick={ShowHideHistory}
         />
       <HistoryGame history={history} />
       </WrapperHashtagHistory>

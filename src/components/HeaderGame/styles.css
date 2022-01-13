@@ -39,9 +39,7 @@
         justify-content: center;
         position: relative;
     }
-    .app .card-game{
-        margin-right: 40px;
-    }
+   
     .app .label-game{
         position: absolute;
         top: 370px;
