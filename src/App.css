@@ -1,18 +1,81 @@
 
 .app{
    text-align: center;
+   position: relative;
+   overflow-x: hidden;
+   height: 100vh;
 }
 
-.app > .header{
+.app  .header-game{
     width: 90vw;
     margin: 0 auto 85px ;
+    min-width: 260px;
 }
 
-.app > .card {
+.app  .card-game {
     display: inline-block;
     box-sizing: border-box;
     width: 90vw;
     height: 90vw;
     margin-bottom: 40px;
+    max-width: 330px;
+    max-height: 330px;
+    min-width: 260px;
+    min-height: 260px;
 }
 
+.app  .label-game{
+    margin-bottom: var(--spacing-big);
+    display: flex;
+    justify-content: center;
+}
+
+.app  .history-game{
+    display: none;
+}
+
+.app  .input-game:checked ~ .history-game{
+    display: block;
+}
+
+@media(min-width:740px) {
+    .app  .header-game{
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .app > .wrapper-hashtaghistory{
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        transition: transform 200ms linear;
+    }
+
+    .app > .wrapper-hashtaghistory.-active{
+        transform: translateX(-20%);
+    }
+  
+    .app .label-game{
+        position: absolute;
+        left: 96px;
+        top: 370px;
+    }
+
+    
+    .app .history-game{
+        transition: transform 200ms linear;
+        opacity: 0;
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    .app > .wrapper-hashtaghistory.-active > .history-game{
+        opacity: 1;
+        transform: translateX(200%);
+    }
+  
+
+}
